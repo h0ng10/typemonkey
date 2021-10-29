@@ -1,11 +1,9 @@
 Add-Type -AssemblyName System.Windows.Forms
-Add-Type -Assembly "Microsoft.VisualBasic"
 
-$file = ".\jd-gui-windows-1.6.6.zip.base64"
+$file = ".\Sherlock.zip.base64"
 
 
-[Microsoft.VisualBasic.Interaction]::AppActivate("test.txt - Editor")
-Start-Sleep -Milliseconds 2000
+Start-Sleep -Milliseconds 5000
 $currentLineNumber = 1
 $totalLineNumber = (Get-Content $file).Length
 
